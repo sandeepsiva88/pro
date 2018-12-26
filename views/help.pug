@@ -1,0 +1,342 @@
+doctype html
+html(lang='zxx')
+  head
+    link(rel='icon', href='images/download.png')
+    title Book guide
+    // meta tags
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='keywords', content='Employ Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script.
+      addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+      }, false);
+      function hideURLbar() {
+      window.scrollTo(0, 1);
+      }
+    // //meta tags ends here
+    // booststrap
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css', media='all')
+    // //booststrap end
+    // font-awesome icons
+    link(href='css/fontawesome-all.min.css', rel='stylesheet', type='text/css', media='all')
+    // //font-awesome icons
+    // stylesheets
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // //stylesheets
+    link(href='//fonts.googleapis.com/css?family=Montserrat:300,400,500', rel='stylesheet')
+    style(type='text/css').
+      @import "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+      @import "https://fonts.googleapis.com/css?family=Slabo+27px";
+      * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      }
+      body {
+      background: ;
+      }
+      label.select {
+      display: block;
+      position: relative;
+      width: 40%;
+      margin: 25% auto 0;
+      font-family: 'Slabo 27px', serif;
+      color: white;
+      font-size: 1.875rem;
+      }
+      label.select select {
+      display: block;
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      height: 3.75rem;
+      font-size: 0.875rem;
+      border: none;
+      opacity: 0;
+      cursor: pointer;
+      }
+      label.select span.select {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 3.75rem;
+      line-height: 3.75rem;
+      background: white;
+      border: 1px solid #c0ffee;
+      border-radius: 0.1875rem;
+      color: #222;
+      font-size: 1.625rem;
+      padding: 0 10px;
+      }
+      label.select span.select:after {
+      content: '\f078';
+      position: absolute;
+      right: -1px;
+      top: -1px;
+      height: 3.75rem;
+      width: 3.75rem;
+      font-family: 'FontAwesome';
+      font-size: 12px;
+      background: #c0ffee;
+      text-align: center;
+      color: dec4fe;
+      border-radius: 0 0.1875rem 0.1875rem 0;
+      }
+      @keyframes left-side-btn{
+      20%{left: -90px;}
+      40%{left: -85px;}
+      60%{left: -80px;}
+      80%{left: -75px;}
+      }
+      .side-btn{
+      font-family: sans-serif;
+      position: fixed;
+      width: 220px;
+      height: 80px;
+      top: 45%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background: #d45;
+      text-align: center;
+      transition: 0.3s ease;
+      animation-name: side-btn;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      -webkit-animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+      z-index: 100;
+      }
+      .side-btn a{
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 70px;
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      }
+      .left-side-btn{
+      left: -90px;
+      -ms-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -webkit-animation-name: left-side-btn;
+      }
+      .side-btn:hover{
+      transition: 0.9s ease;
+      right: -75px;
+      top: 45%;
+      width: 240px;
+      height: 100px;
+      -ms-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -webkit-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      }
+  body
+    #home.header-outs
+      .header-w3layouts
+        // //navigation section
+        .headr-title.text-center
+          h1
+            a.navbar-brand(href='index2')
+              span.fab.fa-servicestack
+              | GET GUIDE
+          .clearfix
+        nav.navbar.navbar-expand-lg.navbar-light
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse.nav-fill
+            ul.navbar-nav.nav-pills.nav-fill
+              li.nav-item.active
+                a.nav-link(href='index2')
+                  | Home 
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='about') About
+              li.nav-item
+                a.nav-link(href='service') Service
+              li.nav-item
+                a.nav-link(href='gallery') Gallery
+              li.nav-item
+                a.nav-link(href='guide') Guide Login
+              li.nav-item
+                a.nav-link(href='contact') User Login
+              li.nav-item
+                a.nav-link(href='help') Help
+    // //Navigation
+    // //headder
+    // banner
+    .inner_page-banner.one-img
+    // //banner
+    // short
+    .using-border.py-3
+      .inner_breadcrumb.ml-4
+        ul.short_ls
+          li
+            a(href='index2') Home
+            span / /
+          li Help
+    // //short
+    br
+    .side-btn.left-side-btn
+      a(href='#') Help!
+    h2 Grievance
+    h2
+      br
+      label(for='')
+        select(name='')
+          option(value='') Choose complaint category
+          option(value='') Misbehave
+          option(value='') Fraud
+          option(value='') Misleading
+      br
+      br
+      br
+      br
+    h1 Recent
+    h1
+      br
+      br
+      br
+      // Footer
+      section.buttom-footer.py-lg-4.py-md-3.py-sm-3.py-3
+        .container.py-lg-5.py-md-5.py-sm-4.py-4
+          .row.subscribe-form
+            .col-lg-6.email-sub-agile
+              form(action='/mails', method='POST')
+                .form-group
+                  input.form-control.email-sub-agile(type='email', placeholder='Email', name='email')
+                .text-center
+                  button.btn.subscrib-btnn(type='submit', name='submit') Subscribe
+            .col-lg-6.email-info
+              .wthree-form-list.clr-black
+                h4 For more updates get subscribed.
+          .pt-lg-5.pt-md-5.pt-sm-4.pt-3
+            .row.footer-agile-grids
+              .col-lg-4.col-md-4.col-sm-12.wthree-left-right
+                h4 Nav Links
+                nav.border-line
+                  ul.nav.flex-column
+                    li.nav-item.active
+                      a.nav-link(href='index2')
+                        | Home 
+                        span.sr-only (current)
+                    li.nav-item
+                      a.nav-link(href='about') About
+                    li.nav-item
+                      a.nav-link(href='service') Services
+                    li.nav-item
+                      a.nav-link(href='gallery') Gallery
+                    li.nav-item
+                      a.nav-link(href='gallery') Guide Login
+                    li.nav-item
+                      a.nav-link(href='contact') User Login
+                    li.nav-item
+                      a.nav-link(href='gallery') Help
+              .col-lg-4.col-md-4.col-sm-12.wthree-left-right
+                h4 Our Address
+                .addres-up
+                  ul
+                    li.d-flex.pb-md-3.pb-3
+                      span.fas.fa-map-marker-alt.d-flex
+                      p.d-flex Aditya Engineering college
+                    li.d-flex.pb-md-3.pb-3
+                      span.fas.fa-phone-volume.d-flex(aria-hidden='true')
+                      p.d-flex 8465803247
+                    li.d-flex.pb-md-3.pb-3
+                      span.far.fa-envelope.d-flex
+                      p.d-flex
+                        a(href='mailto:info@example.com') raj.prafullaraj@gmail.com
+                    li.d-flex.pb-md-3.pb-3
+                      span.fas.fa-fax.d-flex
+                      p.d-flex 9703004251
+                    li.d-flex
+                      span.fab.fa-windows.d-flex(aria-hidden='true')
+                      p.d-flex www.getguide.com
+                .icons.mt-4
+                  ul
+                    li
+                      a(href='#')
+                        span.fab.fa-facebook-f
+                    li
+                      a(href='#')
+                        span.fas.fa-envelope
+                    li
+                      a(href='#')
+                        span.fas.fa-rss
+                    li
+                      a(href='#')
+                        span.fab.fa-vk
+              .wthree-left-right.col-lg-4.col-md-4.col-sm-12
+                h4.pb-lg-3.pb-3 Our Posts
+                .footer-post.d-flex.mb-2
+                  .agileinfo_footer_grid1.mr-2
+                    a(href='gallery')
+                      img.img-fluid(src='images/f1.jpg', alt=' ')
+                  .agileinfo_footer_grid1.mr-2
+                    a(href='gallery')
+                      img.img-fluid(src='images/f2.jpg', alt=' ')
+                  .agileinfo_footer_grid1
+                    a(href='gallery')
+                      img.img-fluid(src='images/f3.jpg', alt=' ')
+                .footer-post.d-flex
+                  .agileinfo_footer_grid1.mr-2
+                    a(href='gallery')
+                      img.img-fluid(src='images/f4.jpg', alt=' ')
+                  .agileinfo_footer_grid1.mr-2
+                    a(href='gallery')
+                      img.img-fluid(src='images/f5.jpg', alt=' ')
+                  .agileinfo_footer_grid1
+                    a(href='gallery')
+                      img.img-fluid(src='images/f6.jpg', alt=' ')
+      // //Footer
+      // js working
+      script(src='js/jquery-2.2.3.min.js')
+      // //js working
+      // start-smoth-scrolling
+      script(src='js/move-top.js')
+      script(src='js/easing.js')
+      script.
+        jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({
+        scrollTop: $(this.hash).offset().top
+        }, 900);
+        });
+        });
+      // start-smoth-scrolling
+      // here stars scrolling icon
+      script.
+        $(document).ready(function () {
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear'
+        };
+        $().UItoTop({
+        easingType: 'easeOutQuart'
+        });
+        });
+      // //here ends scrolling icon
+      // bootstrap working
+      script(src='js/bootstrap.min.js')
+      // //bootstrap working
+      script(type='text/javascript').
+        $('select').each(function(){
+        $(this).parent().addClass('select').append('<span class="select"></span>');
+        var text = $('option:selected', this).text();
+        $(this).next('span.select').text(text);
+        });
+        $('select').change(function(){
+        var text = $('option:selected', this).text();
+        $(this).next('span.select').text(text);
+        console.log( text );
+        });

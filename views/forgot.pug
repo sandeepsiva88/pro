@@ -1,0 +1,126 @@
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Contacts
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    style(type='text/css').
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #404040;
+      }
+      .container {
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 1200px;
+      height: 700px;
+      border: 1px solid black;
+      }
+      .container .block-container {
+      background-color: white;
+      position: relative;
+      display: block;
+      width: 50%;
+      height: 100%;
+      float: left;
+      }
+      .container .block-container h2 {
+      padding-top: 30px;
+      padding-bottom: 110px;
+      text-align: center;
+      color: #E00043;
+      opacity: 0.9;
+      font-weight: 700;
+      font-size: 26px;
+      }
+      .container .block-container h3 {
+      font-weight: 600;
+      font-family: helvetica;
+      color: black;
+      opacity: 0.8;
+      font-size: 22px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #333333;
+      }
+      .container .block-container p {
+      margin-top: -5px;
+      color: #AFAFAF;
+      letter-spacing: 0.05em;
+      font-size: 12px;
+      text-align: center;
+      }
+      .container .block-container #email {
+      margin-top: 80px;
+      padding-left: 5px;
+      width: 64%;
+      height: 40px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      color: #AFAFAF;
+      border: 1px solid #CECECE;
+      opacity: 0.8;
+      }
+      .container .block-container .submit {
+      margin-top: 20px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      border: none;
+      width: 65%;
+      height: 40px;
+      background-color: #79F;
+      color: white;
+      cursor: pointer;
+      }
+      .container .block-container .submit:hover {
+      background-color: #55F;
+      }
+      .container .block-container a {
+      display: block;
+      font-size: 12px;
+      margin-top: 30px;
+      text-decoration: none;
+      color: 8E8E8E;
+      text-align: center;
+      }
+      .container .image-container {
+      background-image: url("https://gifyu.com/images/pexels-photo-460621.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity: 0.8;
+      }
+  body
+    .container
+      .block-container
+        h2 Get Guide
+        h3 Forgot your password?
+        p Enter your email below and we'll send you the Reset Link.
+        form
+          input#email.email(type='email', placeholder='Email address')
+          br
+          br
+          center
+            h4#result
+          button.submit(type='button', name='submit') Send Reset Link
+        a(href='/Contact')
+          p Back to Login
+      .block-container.image-container
+    script.
+      $('.submit').click(function(){
+        var id = $('.email').val();
+        //alert(id);
+        $.post('/forgot',{email:id},function(data,jqXHR){
+          //alert(data);
+          $('#result').html(data);
+          $("h4").attr('style',  'color:red');
+          window.location.href = '/index2';
+        });
+      })

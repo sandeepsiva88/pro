@@ -1,0 +1,1565 @@
+doctype html
+html(lang='zxx')
+  head
+    // link of search box
+    link(rel='stylesheet', href='bootstrap.min.css')
+    script(src='js/jquery.min.js')
+    link#bootstrap-css(href='css/bootstrap.min.css', rel='stylesheet')
+    script(src='js/bootstrap.min.js')
+    script(src='js/jquery-1.11.1.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    link(rel='stylesheet', type='text/css', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    script(src='js/jquery.min.js')
+    link(rel='icon', href='images/download.png')
+    title Tourist
+    // meta tags
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='keywords', content='Employ Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script.
+      addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+      }, false);
+      function hideURLbar() {
+      window.scrollTo(0, 1);
+      }
+    // //meta tags ends here
+    // booststrap
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css', media='all')
+    // //booststrap end
+    // font-awesome icons
+    link(href='css/fontawesome-all.min.css', rel='stylesheet', type='text/css', media='all')
+    // //font-awesome icons
+    // For Text About slider
+    link(rel='stylesheet', href='css/flexslider.css', type='text/css', media='all')
+    // //For Text About slider
+    // For Service pie-chart
+    link(rel='stylesheet', href='css/morris.css')
+    // //For Service pie-chart
+    // stylesheets
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // //stylesheets
+    link(href='//fonts.googleapis.com/css?family=Montserrat:300,400,500', rel='stylesheet')
+    style(type='text/css').
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+      *, *:after, *:before {
+      box-sizing: border-box;
+      }
+      body {
+      background: #eee;
+      font-family: 'Open Sans', sans-serif;
+      }
+      .grop-from {
+      width: 75%;
+      height: 70px;
+      background: #fff;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      border-radius: 50px;
+      }
+      .sign{
+      position: absolute;
+      top: 140%;
+      left: 14%;
+      }
+      .grop-from .form-body {
+      height: 70px;
+      overflow: hidden;
+      border-radius: 50px;
+      }
+      .grop-from .form-body .error-text {
+      position: absolute;
+      left: 80px;
+      top: 4px;
+      z-index: 25;
+      color: #b71c1c;
+      font-size: 10px;
+      font-weight: 600;
+      display: none;
+      }
+      .grop-from .form-body .form-controls {
+      position: relative;
+      z-index: 5;
+      transition: ease-in 0.2s;
+      top: 0;
+      }
+      .grop-from .form-body .form-controls input {
+      display: block;
+      width: 100%;
+      height: 70px;
+      padding: 10px 60px 10px 80px;
+      font-size: 18px;
+      color: #666;
+      border: none;
+      }
+      .grop-from .form-body .form-controls input:focus {
+      outline: none;
+      }
+      .grop-from .form-head {
+      position: absolute;
+      left: 0;
+      top: 0%;
+      width: 70px;
+      height: 100%;
+      background: #F50057;
+      border-radius: 50px;
+      text-align: center;
+      line-height: 70px;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+      z-index: 40;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      transition: ease-in 0.2s;
+      }
+      .grop-from .form-head .text {
+      display: none;
+      }
+      .grop-from .form-head .text:before {
+      font-family: 'Open Sans', sans-serif;
+      }
+      .grop-from .form-action {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #fefefe;
+      text-align: center;
+      right: 10px;
+      top: 50%;
+      border-radius: 50px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 50;
+      cursor: pointer;
+      transition: 0.3s;
+      border: none;
+      outline: none;
+      color: inherit;
+      }
+      .grop-from .form-action:hover {
+      background: #f9f9f9;
+      }
+      .grop-from .form-action .icon-action {
+      transition: ease-in 0.2s;
+      }
+      .grop-from .form-action .icon-action:after {
+      line-height: 50px;
+      content: 'arrow_forward';
+      }
+      .grop-from .form-action .icon-action.back {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      }
+      .grop-from .icon-placeholder {
+      font-size: 40px;
+      line-height: 0px;
+      }
+      .grop-from#signup {
+      color: #fff;
+      }
+      .grop-from#signup .form-head {
+      width: 100%;
+      }
+      .grop-from#signup .form-head .icon-placeholder {
+      display: none;
+      }
+      .grop-from#signup .form-head .text {
+      display: block;
+      }
+      .grop-from#signup .form-head .text:before {
+      content: 'Sign Up';
+      }
+      .grop-from#signup .form-action {
+      right: 100px;
+      background: none;
+      line-height: 65px;
+      }
+      .grop-from#signup .form-action .icon-action.back {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      }
+      .grop-from#success {
+      color: #fff;
+      }
+      .grop-from#success .form-head {
+      width: 100%;
+      background: #00E676;
+      }
+      .grop-from#success .form-head .icon-placeholder {
+      display: none;
+      }
+      .grop-from#success .form-head .text {
+      display: block;
+      }
+      .grop-from#success .form-head .text:before {
+      content: 'Success';
+      }
+      .grop-from#success .form-action {
+      right: 90px;
+      background: none;
+      line-height: 65px;
+      }
+      .grop-from#success .form-action .icon-action.back {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      }
+      .grop-from#success .form-action .icon-action:after {
+      content: 'mood';
+      }
+      .grop-from#name {
+      color: #9C27B0;
+      }
+      .grop-from#name .form-head {
+      background: #9C27B0;
+      }
+      .grop-from#name .form-head .icon-placeholder:after {
+      content: 'face';
+      }
+      .grop-from#phone {
+      color: #009688;
+      }
+      .grop-from#phone .form-head {
+      background: #009688;
+      }
+      .grop-from#phone .form-head .icon-placeholder:after {
+      content: 'phone';
+      }
+      .grop-from#phone .form-body .form-controls {
+      top: -70px;
+      }
+      .grop-from#email {
+      color: #039BE5;
+      }
+      .grop-from#email .form-head {
+      background: #039BE5;
+      }
+      .grop-from#email .form-head .icon-placeholder:after {
+      content: 'mail_outline';
+      }
+      .grop-from#email .form-body .form-controls {
+      top: -140px;
+      }
+      .grop-from#password {
+      color: #37474F;
+      }
+      .grop-from#password .form-head {
+      background: #37474F;
+      }
+      .grop-from#password .form-head .icon-placeholder:after {
+      content: 'lock_outline';
+      }
+      .grop-from#password .form-body .form-controls {
+      top: -210px;
+      }
+      .grop-from#password-repeat {
+      color: #212121;
+      }
+      .grop-from#password-repeat .form-head {
+      background: #212121;
+      }
+      .grop-from#password-repeat .form-head .icon-placeholder:after {
+      content: 'lock';
+      }
+      .grop-from#password-repeat .form-body .form-controls {
+      top: -280px;
+      }
+      .grop-from.error .form-head {
+      background: #b71c1c !important;
+      }
+      .grop-from.error .form-head .icon-placeholder:after {
+      content: 'close' !important;
+      }
+      .grop-from.error .form-body .form-controls input:-moz-placeholder {
+      color: #b71c1c;
+      }
+      .grop-from.error .form-body .form-controls input::-moz-placeholder {
+      color: #b71c1c;
+      }
+      .grop-from.error .form-body .form-controls input:-ms-input-placeholder {
+      color: #b71c1c;
+      }
+      .grop-from.error .form-body .form-controls input::-webkit-input-placeholder {
+      color: #b71c1c;
+      }
+      .material-icons, .grop-from .form-action .icon-action, .icon-placeholder {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      /* Preferred icon size */
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-feature-settings: 'liga';
+      font-feature-settings: 'liga';
+      }
+      .box {
+      border-radius: 3px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      padding: 100px 10px;
+      text-align: center;
+      display: block;
+      width: 55%;
+      height: 85%;
+      }
+      hr{
+      color: darkblue;
+      }
+      .userlog_search{
+      position: absolute;
+      top: 200%;
+      left:3%;
+      }
+      .userhead{
+      margin-top: -25%;
+      }
+      .wrap{
+      padding:2.5em;
+      text-align:center;
+      }
+      .button{
+      display:inline-block;
+      font-size:1.2em;
+      padding:1.2em 1.5em;
+      background-color:red;
+      font-family:Gill Sans, "Gill Sans", sans-serif;
+      font-weight:700;
+      letter-spacing:-1px;
+      text-transform:uppercase;
+      text-decoration:none;
+      margin:3em;
+      border:solid 2px red;
+      color:$color;
+      border-radius:2em;
+      transition:all 0.3s linear;
+      animation-iteration-count: infinite;
+      }
+      .button4:hover{
+      color:white;
+      background-color:#00444D;
+      border:2px solid #00444D;
+      animation:none;
+      }
+      .button4{
+      animation-duration: 0.75s;
+      animation-name: jump;
+      color:white;
+      position: absolute;
+      float: right;
+      right:11%;
+      top: 108%;
+      }
+      @keyframes jump {
+      0% {
+      transform: scale(1,1) translate(0px, 0px);
+      }
+      30%{
+      transform: scale(1,0.8) translate(0px, 10px);
+      }
+      75%{
+      transform: scale(1,1.1) translate(0px, -25px);
+      }
+      100% {
+      transform: scale(1,1) translate(0px, 0px);
+      }
+      }
+      @media(max-width:1440px){
+      .grop-from {
+      width: 80%;
+      height: 70px;
+      }
+      .hide{
+      display:none;
+      }
+      .sign{
+      position: absolute;
+      left: 15%;
+      }
+      .button4{
+      right:9%;
+      top: 93%;
+      }
+      }
+      @media(max-width:1292px){
+      .userlog_search{
+      position: absolute;
+      top:180%;
+      }
+      .box {
+      width: 55%;
+      height: 85%;
+      }
+      .userhead{
+      margin-top: -25%;
+      }
+      }
+      @media(max-width:1200px){
+      .grop-from {
+      width: 75%;
+      }
+      }
+      @media(max-width:1050px){
+      .button4{
+      top: 90%;
+      }
+      .userlog_search{
+      position: absolute;
+      top: 160%;
+      }
+      .userhead{
+      margin-top: -28%;
+      }
+      .box {
+      width: 60%;
+      height: 85%;
+      background-color: yellow
+      }
+      .grop-from {
+      width: 75%;
+      height: 70px;
+      }
+      .sign{
+      position: absolute;
+      top: 120%;
+      left: 18%;
+      }
+      }
+      @media(max-width:991px){
+      .sign{
+      position: absolute;
+      top: 150%;
+      left: 15%;
+      }
+      .userlog_search{
+      position: absolute;
+      top: 220%;
+      }
+      .box {
+      width: 80%;
+      height: 85%;
+      background-color: yellow
+      }
+      }
+      @media(max-width:925px){
+      .sign{
+      left: 16%;
+      }
+      }
+      @media(max-width:880px){
+      .sign{
+      left: 17%;
+      }
+      .button4{
+      position: relative;
+      right:0%;
+      top: 70%;
+      }
+      .button{
+      font-size:1.0em;
+      padding:1.0em 1.2em;
+      }
+      }
+      @media(max-width:830px){
+      .sign{
+      left: 18%;
+      }
+      }
+      @media(max-width:770px){
+      .userlog_search{
+      position: absolute;
+      top: 170%;
+      left:8%;
+      }
+      .userhead{
+      margin-top: -15%;
+      }
+      .box {
+      width: 200%;
+      height: 90%;
+      }
+      .grop-from {
+      width: 120%;
+      height: 70px;
+      }
+      .sign{
+      position: absolute;
+      top: 115%;
+      left: 50%;
+      }
+      }
+      @media(max-width:730px){
+      .userlog_search{
+      left:5%;
+      }
+      }
+      @media(max-width:700px){
+      .userlog_search{
+      position: absolute;
+      top: 150%;
+      left:12%;
+      }
+      .userhead{
+      margin-top: -15%;
+      }
+      .box {
+      width: 200%;
+      height: 90%;
+      }
+      .grop-from {
+      width: 80%;
+      height: 70px;
+      }
+      .sign{
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      }
+      }
+      @media(max-width:660px){
+      .userlog_search{
+      left:12%;
+      }
+      }
+      @media(max-width:605px){
+      .userlog_search{
+      left:2%;
+      top: 150%;
+      }
+      .userhead{
+      margin-top: -23%;
+      font-size: 25px;
+      }
+      .grop-from .form-body {
+      height: 50px;
+      }
+      .box {
+      width: 180%;
+      height: 90%;
+      }
+      .grop-from {
+      width: 90%;
+      height: 50px;
+      }
+      .sign{
+      position: absolute;
+      top: 120%;
+      left: 45%;
+      }
+      }
+      @media(max-width:585px){
+      .userlog_search{
+      left:2%;
+      top: 170%;
+      }
+      .box {
+      width: 210%;
+      height: 90%;
+      }
+      .userhead{
+      margin-top: -20%;
+      }
+      .grop-from {
+      width: 100%;
+      }
+      }
+      @media(max-width:575px){
+      .box {
+      width: 160%;
+      height: 85%;
+      }
+      .userlog_search{
+      left:0%;
+      top: 170%;
+      }
+      }
+      @media(max-width:440px){
+      .box {
+      width: 140%;
+      height: 85%;
+      }
+      }
+      @media(max-width:415px){
+      .box {
+      width: 140%;
+      height: 80%;
+      }
+      .userhead{
+      margin-top: -30%;
+      }
+      .userlog_search{
+      top: 160%;
+      }
+      }
+      @media(max-width:397px){
+      .box {
+      width: 120%;
+      height: 80%;
+      }
+      .userhead{
+      margin-top: -36%;
+      }
+      .userlog_search{
+      left: 2%;
+      }
+      }
+      @media(max-width:1280px){
+      .button4{
+      right:8%;
+      top: 83%;
+      }
+      }
+  body
+    #home.header-outs
+      .header-w3layouts
+        // //navigation section
+        .headr-title.text-center
+          h1
+            a.navbar-brand(href='index2')
+              span.fab.fa-servicestack
+              | Get Guide
+          .clearfix
+        nav.navbar.navbar-expand-lg.navbar-light
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse.nav-fill
+            ul.navbar-nav.nav-pills.nav-fill
+              li.nav-item.active
+                a.nav-link(href='index2')
+                  | Home 
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='about') About
+              li.nav-item
+                a.nav-link(href='service') Service
+              li.nav-item
+                a.nav-link(href='gallery') Gallery
+              li.nav-item
+                a.nav-link(href='guide') Guide Login
+              li.nav-item
+                a.nav-link(href='contact') User Login
+              li.nav-item
+                a.nav-link(href='help') Help
+      // //Navigation
+      // Slideshow 4
+      .slider
+        .callbacks_container
+          ul#slider4.rslides
+            li
+              .slider-img.one-img
+                .container.hide
+                  .slider-info
+                    .upper-info.text-left
+                      h5 THE WORLD IS A BOOK
+                      .bottom-info
+                        h4 Travel And Discover.
+                    .outs_more-buttn
+                      a(href='about') Read More
+            li
+              .slider-img.two-img
+                .container.hide
+                  .slider-info
+                    .upper-info.text-left
+                      h5 Share Your Ideas 
+                      .bottom-info
+                        h4 Funding And Aims
+                    .outs_more-buttn
+                      a(href='about') Read More
+            li
+              .slider-img.three-img
+                .container.hide
+                  .slider-info
+                    .upper-info.text-left
+                      h5 Face Your Challenge
+                      .bottom-info
+                        h4
+                          | Become a Winner
+                    .outs_more-buttn
+                      a(href='about') Read More
+        // This is here just to demonstrate the callbacks
+        //
+          <ul class="events">
+          <li>Example 4 callback events</li>
+          </ul>
+        .clearfix
+    // //banner
+    // about
+    section#about.about.py-lg-4.py-md-3.py-sm-3.py-3.p2
+      .container.py-lg-5.py-md-5.py-sm-4.py-4
+        h3.title.text-center.mb-lg-5.mb-md-4.mb-sm-4.mb-3 BriefLy Us
+        .wrap
+          a.button.button4(href='booknow') Book Now!
+        .agile-abt-info
+          .info-sub-w3.pb-lg-3.pb-md-2.pb-2
+            h3
+              i
+                | Our website is very efficient for those who believes in travel and tourism.Our website is language friendly for all type of people who lives across the world.With the help of our website you can roam to any unknown and world heritage places very easily.Our webite provides knowledgeble guider who help you to have a step over any world heritage places at reasonable cost.
+        // text slider
+        .slider-about.rounded.my-lg-4.my-md-3.my-sm-3.my-3
+          .flexslider
+            ul.slides
+              li
+                .row
+                  .col-lg-3.about-wls-text-left
+                    h5 Mark Twain
+                  .col-lg-9.about-text-right
+                    p
+                      | Twenty years from now you will be more disappointed by the things you didn't do than by the ones you did. So throw off the bowlines, sail away from the safe harbor. Catch the trade winds in you sail. Explore. Dream. Discover.
+              li
+                .row
+                  .col-lg-3.about-wls-text-left
+                    h5 D.H. Lawrence
+                  .col-lg-9.about-text-right
+                    p
+                      | When we get out of the glass bottle of our ego and when we escape like the squirrels in the cage of our personality and get into the forest again, we shall shiver with cold and fright. But things will happen to us so that we don't know ourselves. Cool, unlying life will rush in.
+              li
+                .row
+                  .col-lg-3.about-wls-text-left
+                    h5 Wolfgang Amadeus Mozart
+                  .col-lg-9.about-text-right
+                    p
+                      | A man of ordinary talent will always be ordinary, whether he travels or not; but a man of superior talent will go to pieces if he remains forever in the same place.
+              li
+                .row
+                  .col-lg-3.about-wls-text-left
+                    h5 Aldous Huxley
+                  .col-lg-9.about-text-right
+                    p
+                      | For the born traveller, travelling is a besetting vice. Like other vices, it is imperious, demanding its victim's time, money, energy and the sacrifice of comfort.
+        // //text slider
+        .row
+          .col-lg-6.col-md-6.wrapper
+            canvas#c.about-chat
+            .label text
+          .col-lg-6.col-md-6.jst-wthree-text
+            h2
+              | Why we Are Best 
+              br
+              |                      To Others
+            .about-text-right
+              ul.best
+                li Easy and Efficient.
+                li Provides better guide.
+                li Trustworthy.
+                li Legal and Authorized guide by govt.
+                li Safe and Secure.
+                li Flexible Language.
+    // //about
+    // services
+    section.service.py-lg-4.py-md-3.py-sm-3.py-3
+      .container.py-lg-5.py-md-5.py-sm-4.py-3
+        h3.title.clr.text-center.mb-lg-5.mb-md-4.mb-sm-4.mb-3 services
+        .row.agile-service-grids-all
+          .col-lg-4.w3layouts-service-list
+            .row.white-shadow.rounded.p-lg-4.p-md-4.p-sm-3.p-3.mb-3.clr-one
+              .col-md-3.col-sm-3.white-left
+                span.fas.fa-user.banner-icon
+              .col-md-9.col-sm-9.white-right
+                h4 Provides guide
+                p
+                  | Our website provides enourmous tourist guide for proper vision of concern places and rightful site so as to visit public demanding places.
+            .row.white-shadow.rounded.p-lg-4.p-md-4.p-sm-3.p-3.mb-3.clr-two
+              .col-md-3.col-sm-3.white-left
+                span.fas.fa-dollar-sign.banner-icon
+              .col-md-9.col-sm-9.white-right
+                h4 Resonable Cost
+                p
+                  | Tourist will be destinated at reasonable cost as fixed by authorized organisation.
+            .row.white-shadow.rounded.p-lg-4.p-md-4.p-sm-3.p-3.clr-three
+              .col-md-3.col-sm-3.white-left
+                span.fas.fa-search.banner-icon
+              .col-md-9.col-sm-9.white-right
+                h4 Easy to Search
+                p Tourist can search for there guide very easily and efficiently.
+          .col-lg-4.w3layouts-service-list
+            .white-pie-chart
+              // pie-chart
+              .area-grids
+                .area-grids-heading
+                #graph4
+              // //pie-chart
+          .col-lg-4.w3layouts-service-list
+            .row.white-shadow.rounded.p-lg-4.p-md-4.p-sm-3.p-3.mb-3.clr-four
+              .col-md-3.col-sm-3.white-left
+                span.fas.fa-bolt.banner-icon
+              .col-md-9.col-sm-9.white-right
+                h4 Fast response
+                p
+                  | After searching for tourist guide,guide will be responded to tourist address at there quickest time.
+            .row.white-shadow.rounded.p-lg-4.p-md-4.p-sm-3.p-3.mb-3.clr-five
+              .col-md-3.col-sm-3.white-left
+                span.fas.fa-language.banner-icon
+              .col-md-9.col-sm-9.white-right
+                h4 Adequate Language
+                p Different race of peoples can get guide at comfortable language.
+            .row.white-shadow.rounded.p-lg-4.p-md-4.p-sm-3.p-3.clr-six
+              .col-md-3.col-sm-3.white-left
+                span.fas.fa-book.banner-icon
+              .col-md-9.col-sm-9.white-right
+                h4 Right Explanation
+                p
+                  | Guide will be highly knowledgable so as they could explain accurate facts about places.
+    // //services
+    // latest news
+    section.blog.py-lg-4.py-md-3.py-sm-3.py-3
+      .container.py-lg-5.py-md-5.py-sm-4.py-3
+        h3.title.text-center.mb-lg-5.mb-md-4.mb-sm-4.mb-3 Upcoming Updates
+        .row.blog-top-grids
+          .col-lg-6.left-side-agile.mb-3
+            .least-w3layouts-text-gap
+              .row.py-3
+                .col-md-4.col-sm-4.news-img
+                  img.image-fluid(src='images/u3.jpg', alt='')
+                .col-md-8.col-sm-8.news-agile-text
+                  h4
+                    | Online Restaurants Booking
+                  p.groom-right.text-left
+                    | Our website enables you to book best and renowned restaurants at very resonable cost.You can book nearby restaurants very easily....
+          .col-lg-6.left-side-agile
+            .least-w3layouts-text-gap
+              .row.py-3
+                .col-md-4.col-sm-4.news-img
+                  img.image-fluid(src='images/u4.jpg', alt='')
+                .col-md-8.col-sm-8.news-agile-text
+                  h4
+                    | Hotel Booking
+                  p.groom-right.text-left
+                    | Our website enables you to book best and renowned hotels at very resonable cost.You can book nearby hotels very easily....
+        .row.blog-top-grids
+          .col-lg-6.left-side-agile.mb-3
+            .least-w3layouts-text-gap
+              .row.py-3
+                .col-md-4.col-sm-4.news-img
+                  img.image-fluid(src='images/u1.jpg', alt='')
+                .col-md-8.col-sm-8.news-agile-text
+                  h4
+                    | Online Food Order
+                  p.groom-right.text-left
+                    | Our website will provide food ordering process soon.You will be able to order food of your own interest....
+          .col-lg-6.left-side-agile
+            .least-w3layouts-text-gap
+              .row.py-3
+                .col-md-4.col-sm-4.news-img
+                  img.image-fluid(src='images/u5.png', alt='')
+                .col-md-8.col-sm-8.news-agile-text
+                  h4
+                    | Donate
+                  p.groom-right.text-left
+                    | You can help us by joining to our website in a financial way and by donating some useful elements for our website....
+    // latest news
+    // Team
+    section.team.py-lg-4.py-md-3.py-sm-3.py-3
+      .container.py-lg-5.py-md-5.py-sm-4.py-3
+        h3.title.text-center.clr.mb-lg-5.mb-md-4.mb-sm-4.mb-3 Our Team
+        .row
+          // Team member
+          .col-lg-4.team-list-one
+            .image-flip
+              .mainflip
+                .frontside
+                  .card
+                    .card-body.text-center
+                      p
+                        img.image-fluid(src='images/l2.jpg', alt='')
+                      h4.card-title.mt-3 Rahul Kachhap
+                      p.card-text.mb-3 UI Designer
+                      a.btn.btn-primary.btn-sm(href='#')
+                        i.fa.fa-plus
+                .backside
+                  .card
+                    .card-body.text-center.mt-4
+                      h4.card-title Rahul Kachhap
+                      p.card-text.mb-3
+                        | I am persuing third year B.TECH CSE branch from ADITYA COLLEGE OF ENGINEERING.I am working as a UI designer in this concerned project.
+                      ul.list-inline
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://www.facebook.com/rahul.kachhap.39')
+                            span.fab.fa-facebook-f
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://plus.google.com/u/0/104229860940286315918')
+                            span.fab.fa-google-plus-g
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://twitter.com/rahulkachhap_')
+                            span.fab.fa-twitter
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://www.instagram.com/rahulkachhap_')
+                            span.fab.fa-instagram
+          // ./Team member
+          // Team member
+          .col-lg-4.team-list-two
+            .image-flip
+              .mainflip
+                .frontside
+                  .card
+                    .card-body.text-center
+                      p
+                        img.image-fluid(src='images/l1.jpg', alt='')
+                      h4.card-title.mt-3 Prafulla Raj
+                      p.card-text.mb-3 Project Manager and co-founder
+                      a.btn.btn-primary.btn-sm(href='#')
+                        span.fa.fa-plus
+                .backside
+                  .card
+                    .card-body.text-center.mt-4
+                      h4.card-title Prafulla Raj
+                      p.card-text.mb-3
+                        | I am persuing third year B.TECH CSE branch from ADITYA COLLEGE OF ENGINEERING.I am working as a PROJECT MANAGER designer in this concerned project.
+                      ul.list-inline
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://www.facebook.com/prafulla.raj1')
+                            span.fab.fa-facebook-f
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://plus.google.com/u/0/100065983106428609684')
+                            span.fab.fa-google-plus-g
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://twitter.com/prafullaraj')
+                            span.fab.fa-twitter
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://www.instagram.com/prafulla_raj')
+                            span.fab.fa-instagram
+          // ./Team member
+          // Team member
+          .col-lg-4.team-list-three
+            .image-flip
+              .mainflip
+                .frontside
+                  .card
+                    .card-body.text-center
+                      p
+                        img.image-fluid(src='images/l1.jpg', alt='')
+                      h4.card-title.mt-3 Sachin Kumar Soni
+                      p.card-text.mb-3 FullStack Developer
+                      a.btn.btn-primary.btn-sm(href='#')
+                        i.fa.fa-plus
+                .backside
+                  .card
+                    .card-body.text-center.mt-4
+                      h4.card-title Sachin Kumar Soni
+                      p.card-text.mb-3
+                        | I am persuing third year B.TECH CSE branch from ADITYA COLLEGE OF ENGINEERING.I am working as a FULLSTACK DEVELOPER designer in this concerned project.
+                      ul.list-inline
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-facebook-f
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-google-plus-g
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-twitter
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://www.instagram.com/rahulkachhap_')
+                            span.fab.fa-instagram
+          // ./Team member
+        br
+        .row
+          // Team member
+          .col-lg-4.team-list-one
+            .image-flip
+              .mainflip
+                .frontside
+                  .card
+                    .card-body.text-center
+                      p
+                        img.image-fluid(src='images/l1.jpg', alt='')
+                      h4.card-title.mt-3 Prince Kumar Jaiswal
+                      p.card-text.mb-3 co-founder and Backend Developer
+                      a.btn.btn-primary.btn-sm(href='#')
+                        i.fa.fa-plus
+                .backside
+                  .card
+                    .card-body.text-center.mt-4
+                      h4.card-title Prince Kumar Jaiswal
+                      p.card-text.mb-3
+                        | I am persuing third year B.TECH CSE branch from ADITYA COLLEGE OF ENGINEERING.I am working as a BACKEND DEVELOPER designer in this concerned project.
+                      ul.list-inline
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-facebook-f
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-google-plus-g
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-twitter
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://www.instagram.com/rahulkachhap_')
+                            span.fab.fa-instagram
+          // ./Team member
+          // Team member
+          .col-lg-4.team-list-two
+            .image-flip
+              .mainflip
+                .frontside
+                  .card
+                    .card-body.text-center
+                      p
+                        img.image-fluid(src='images/l1.jpg', alt='')
+                      h4.card-title.mt-3 Ayush Ashish
+                      p.card-text.mb-3 Frontend Designer
+                      a.btn.btn-primary.btn-sm(href='#')
+                        span.fa.fa-plus
+                .backside
+                  .card
+                    .card-body.text-center.mt-4
+                      h4.card-title Ayush Ashish
+                      p.card-text.mb-3
+                        | I am persuing third year B.TECH CSE branch from ADITYA COLLEGE OF ENGINEERING.I am working as a FRONTEND DESIGNER designer in this concerned project.
+                      ul.list-inline
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-facebook-f
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-google-plus-g
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-twitter
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://www.instagram.com/rahulkachhap_')
+                            span.fab.fa-instagram
+          // ./Team member
+          // Team member
+          .col-lg-4.team-list-three
+            .image-flip
+              .mainflip
+                .frontside
+                  .card
+                    .card-body.text-center
+                      p
+                        img.image-fluid(src='images/l1.jpg', alt='')
+                      h4.card-title.mt-3 Bipin Kumar Soni
+                      p.card-text.mb-3 Backend Developer
+                      a.btn.btn-primary.btn-sm(href='#')
+                        i.fa.fa-plus
+                .backside
+                  .card
+                    .card-body.text-center.mt-4
+                      h4.card-title Bipin Kumar Soni
+                      p.card-text.mb-3
+                        | I am persuing third year B.TECH IT branch from ADITYA COLLEGE OF ENGINEERING AND TECHNOLOGY.I am working as a BACKEND DEVELOPER designer in this concerned project.
+                      ul.list-inline
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-facebook-f
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-google-plus-g
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='#')
+                            span.fab.fa-twitter
+                        li.list-inline-item
+                          a.social-icon.text-xs-center(target='_blank', href='https://www.instagram.com/rahulkachhap_')
+                            span.fab.fa-instagram
+          // ./Team member
+          // //team
+          // // register
+    // Footer
+    section.buttom-footer.py-lg-4.py-md-3.py-sm-3.py-3
+      .container.py-lg-5.py-md-5.py-sm-4.py-4
+        .row.subscribe-form
+          .col-lg-6.email-sub-agile
+            form(action='/mails', method='POST')
+              .form-group
+                input.form-control.email-sub-agile(type='email', placeholder='Email', name='email')
+              .text-center
+                button.btn.subscrib-btnn(type='submit', value='send') Subscribe
+          .col-lg-6.email-info
+            .wthree-form-list.clr-black
+              h4 For more updates get subscribed.
+        .pt-lg-5.pt-md-5.pt-sm-4.pt-3
+          .row.footer-agile-grids
+            .col-lg-4.col-md-4.col-sm-12.wthree-left-right
+              h4 Nav Links
+              nav.border-line
+                ul.nav.flex-column
+                  li.nav-item.active
+                    a.nav-link(href='index2')
+                      | Home 
+                      span.sr-only (current)
+                  li.nav-item
+                    a.nav-link(href='about') About
+                  li.nav-item
+                    a.nav-link(href='service') Services
+                  li.nav-item
+                    a.nav-link(href='gallery') Gallery
+                  li.nav-item
+                    a.nav-link(href='gallery') Guide Login
+                  li.nav-item
+                    a.nav-link(href='contact') Contact
+                  li.nav-item
+                    a.nav-link(href='gallery') Help
+            .col-lg-4.col-md-4.col-sm-12.wthree-left-right
+              h4 Our Address
+              .addres-up
+                ul
+                  li.d-flex.pb-md-3.pb-3
+                    span.fas.fa-map-marker-alt.d-flex
+                    p.d-flex Aditya Engineering college
+                  li.d-flex.pb-md-3.pb-3
+                    span.fas.fa-phone-volume.d-flex(aria-hidden='true')
+                    p.d-flex 8465803247
+                  li.d-flex.pb-md-3.pb-3
+                    span.far.fa-envelope.d-flex
+                    p.d-flex
+                      a(href='mailto:info@example.com') raj.prafullaraj@gmail.com
+                  li.d-flex.pb-md-3.pb-3
+                    span.fas.fa-fax.d-flex
+                    p.d-flex 9703004251
+                  li.d-flex
+                    span.fab.fa-windows.d-flex(aria-hidden='true')
+                    p.d-flex www.getguide.com
+              .icons.mt-4
+                ul
+                  li
+                    a(href='#')
+                      span.fab.fa-facebook-f
+                  li
+                    a(href='#')
+                      span.fas.fa-envelope
+                  li
+                    a(href='#')
+                      span.fas.fa-rss
+                  li
+                    a(href='#')
+                      span.fab.fa-vk
+            .wthree-left-right.col-lg-4.col-md-4.col-sm-12
+              h4.pb-lg-3.pb-3 Our Posts
+              .footer-post.d-flex.mb-2
+                .agileinfo_footer_grid1.mr-2
+                  a(href='gallery')
+                    img.img-fluid(src='images/f1.jpg', alt=' ')
+                .agileinfo_footer_grid1.mr-2
+                  a(href='gallery')
+                    img.img-fluid(src='images/f2.jpg', alt=' ')
+                .agileinfo_footer_grid1
+                  a(href='gallery')
+                    img.img-fluid(src='images/f3.jpg', alt=' ')
+              .footer-post.d-flex
+                .agileinfo_footer_grid1.mr-2
+                  a(href='gallery')
+                    img.img-fluid(src='images/f4.jpg', alt=' ')
+                .agileinfo_footer_grid1.mr-2
+                  a(href='gallery')
+                    img.img-fluid(src='images/f5.jpg', alt=' ')
+                .agileinfo_footer_grid1
+                  a(href='gallery')
+                    img.img-fluid(src='images/f6.jpg', alt=' ')
+    // //Footer
+    // js working
+    script(src='js/jquery-2.2.3.min.js')
+    // //js working
+    // responsiveslides banner
+    script(src='js/responsiveslides.min.js')
+    script.
+      // You can also use "$(window).load(function() {"
+      $(function () {
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+      auto: true,
+      pager:true,
+      nav: false,
+      speed: 900,
+      namespace: "callbacks",
+      before: function () {
+      $('.events').append("<li>before event fired.</li>");
+      },
+      after: function () {
+      $('.events').append("<li>after event fired.</li>");
+      }
+      });
+      });
+    // // responsiveslides banner
+    // About OnScroll-Number-Increase-JavaScript
+    script(src='js/jquery.waypoints.min.js')
+    script(src='js/jquery.countup.js')
+    script.
+      $('.counter').countUp();
+    // //OnScroll-Number-Increase-JavaScript
+    // FlexSlider-JavaScript
+    script(defer='', src='js/jquery.flexslider.js')
+    script.
+      $(window).load(function(){
+      $('.flexslider').flexslider({
+      animation: "slide",
+      start: function(slider){
+      $('body').removeClass('loading');
+      }
+      });
+      });
+    // //FlexSlider-JavaScript
+    // About Chart-JavaScript
+    script.
+      var label = document.querySelector(".label");
+      var c = document.getElementById("c");
+      var ctx = c.getContext("2d");
+      var cw = c.width =500;
+      var ch = c.height = 350;
+      var cx = cw / 2,
+      cy = ch / 2;
+      var rad = Math.PI / 180;
+      var frames = 0;
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = "#999";
+      ctx.fillStyle = "#ccc";
+      ctx.font = "14px monospace";
+      var grd = ctx.createLinearGradient(0, 0, 0, cy);
+      grd.addColorStop(0, "hsla(167,72%,60%,1)");
+      grd.addColorStop(1, "hsla(167,72%,60%,0)");
+      var oData = {
+      "2008": 10,
+      "2009": 39.9,
+      "2010": 17,
+      "2011": 30.0,
+      "2012": 5.3,
+      "2013": 38.4,
+      "2014": 15.7,
+      "2015": 9.0
+      };
+      var valuesRy = [];
+      var propsRy = [];
+      for (var prop in oData) {
+      valuesRy.push(oData[prop]);
+      propsRy.push(prop);
+      }
+      var vData = 4;
+      var hData = valuesRy.length;
+      var offset = 50.5; //offset chart axis
+      var chartHeight = ch - 2 * offset;
+      var chartWidth = cw - 2 * offset;
+      var t = 1 / 7; // curvature : 0 = no curvature
+      var speed = 2; // for the animation
+      var A = {
+      x: offset,
+      y: offset
+      }
+      var B = {
+      x: offset,
+      y: offset + chartHeight
+      }
+      var C = {
+      x: offset + chartWidth,
+      y: offset + chartHeight
+      }
+      /*
+      A  ^
+      |  |
+      + 25
+      |
+      |
+      |
+      + 25
+      |__|_________________________________  C
+      B
+      */
+      // CHART AXIS -------------------------
+      ctx.beginPath();
+      ctx.moveTo(A.x, A.y);
+      ctx.lineTo(B.x, B.y);
+      ctx.lineTo(C.x, C.y);
+      ctx.stroke();
+      // vertical ( A - B )
+      var aStep = (chartHeight - 50) / (vData);
+      var Max = Math.ceil(arrayMax(valuesRy) / 10) * 10;
+      var Min = Math.floor(arrayMin(valuesRy) / 10) * 10;
+      var aStepValue = (Max - Min) / (vData);
+      console.log("aStepValue: " + aStepValue); //8 units
+      var verticalUnit = aStep / aStepValue;
+      var a = [];
+      ctx.textAlign = "right";
+      ctx.textBaseline = "middle";
+      for (var i = 0; i <= vData; i++) {
+      if (i == 0) {
+      a[i] = {
+      x: A.x,
+      y: A.y + 20,
+      val: Max
+      }
+      } else {
+      a[i] = {}
+      a[i].x = a[i - 1].x;
+      a[i].y = a[i - 1].y + aStep;
+      a[i].val = a[i - 1].val - aStepValue;
+      }
+      drawCoords(a[i], 3, 0);
+      }
+      //horizontal ( B - C )
+      var b = [];
+      ctx.textAlign = "center";
+      ctx.textBaseline = "hanging";
+      var bStep = chartWidth / (hData + 1);
+      for (var i = 0; i < hData; i++) {
+      if (i == 0) {
+      b[i] = {
+      x: B.x + bStep,
+      y: B.y,
+      val: propsRy[0]
+      };
+      } else {
+      b[i] = {}
+      b[i].x = b[i - 1].x + bStep;
+      b[i].y = b[i - 1].y;
+      b[i].val = propsRy[i]
+      }
+      drawCoords(b[i], 0, 3)
+      }
+      function drawCoords(o, offX, offY) {
+      ctx.beginPath();
+      ctx.moveTo(o.x - offX, o.y - offY);
+      ctx.lineTo(o.x + offX, o.y + offY);
+      ctx.stroke();
+      ctx.fillText(o.val, o.x - 2 * offX, o.y + 2 * offY);
+      }
+      //----------------------------------------------------------
+      // DATA
+      var oDots = [];
+      var oFlat = [];
+      var i = 0;
+      for (var prop in oData) {
+      oDots[i] = {}
+      oFlat[i] = {}
+      oDots[i].x = b[i].x;
+      oFlat[i].x = b[i].x;
+      oDots[i].y = b[i].y - oData[prop] * verticalUnit - 20;
+      oFlat[i].y = b[i].y - 25;
+      oDots[i].val = oData[b[i].val];
+      i++
+      }
+      ///// Animation Chart ///////////////////////////
+      //var speed = 3;
+      function animateChart() {
+      requestId = window.requestAnimationFrame(animateChart);
+      frames += speed; //console.log(frames)
+      ctx.clearRect(60, 0, cw, ch - 60);
+      for (var i = 0; i < oFlat.length; i++) {
+      if (oFlat[i].y > oDots[i].y) {
+      oFlat[i].y -= speed;
+      }
+      }
+      drawCurve(oFlat);
+      for (var i = 0; i < oFlat.length; i++) {
+      ctx.fillText(oDots[i].val, oFlat[i].x, oFlat[i].y - 25);
+      ctx.beginPath();
+      ctx.arc(oFlat[i].x, oFlat[i].y, 3, 0, 2 * Math.PI);
+      ctx.fill();
+      }
+      if (frames >= Max * verticalUnit) {
+      window.cancelAnimationFrame(requestId);
+      }
+      }
+      requestId = window.requestAnimationFrame(animateChart);
+      /////// EVENTS //////////////////////
+      c.addEventListener("mousemove", function(e) {
+      label.innerHTML = "";
+      label.style.display = "none";
+      this.style.cursor = "default";
+      var m = oMousePos(this, e);
+      for (var i = 0; i < oDots.length; i++) {
+      output(m, i);
+      }
+      }, false);
+      function output(m, i) {
+      ctx.beginPath();
+      ctx.arc(oDots[i].x, oDots[i].y, 20, 0, 2 * Math.PI);
+      if (ctx.isPointInPath(m.x, m.y)) {
+      //console.log(i);
+      label.style.display = "block";
+      label.style.top = (m.y + 10) + "px";
+      label.style.left = (m.x + 10) + "px";
+      label.innerHTML = "<strong>" + propsRy[i] + "</strong>: " + valuesRy[i] + "%";
+      c.style.cursor = "pointer";
+      }
+      }
+      // CURVATURE
+      function controlPoints(p) {
+      // given the points array p calculate the control points
+      var pc = [];
+      for (var i = 1; i < p.length - 1; i++) {
+      var dx = p[i - 1].x - p[i + 1].x; // difference x
+      var dy = p[i - 1].y - p[i + 1].y; // difference y
+      // the first control point
+      var x1 = p[i].x - dx * t;
+      var y1 = p[i].y - dy * t;
+      var o1 = {
+      x: x1,
+      y: y1
+      };
+      // the second control point
+      var x2 = p[i].x + dx * t;
+      var y2 = p[i].y + dy * t;
+      var o2 = {
+      x: x2,
+      y: y2
+      };
+      // building the control points array
+      pc[i] = [];
+      pc[i].push(o1);
+      pc[i].push(o2);
+      }
+      return pc;
+      }
+      function drawCurve(p) {
+      var pc = controlPoints(p); // the control points array
+      ctx.beginPath();
+      //ctx.moveTo(p[0].x, B.y- 25);
+      ctx.lineTo(p[0].x, p[0].y);
+      // the first & the last curve are quadratic Bezier
+      // because I'm using push(), pc[i][1] comes before pc[i][0]
+      ctx.quadraticCurveTo(pc[1][1].x, pc[1][1].y, p[1].x, p[1].y);
+      if (p.length > 2) {
+      // central curves are cubic Bezier
+      for (var i = 1; i < p.length - 2; i++) {
+      ctx.bezierCurveTo(pc[i][0].x, pc[i][0].y, pc[i + 1][1].x, pc[i + 1][1].y, p[i + 1].x, p[i + 1].y);
+      }
+      // the first & the last curve are quadratic Bezier
+      var n = p.length - 1;
+      ctx.quadraticCurveTo(pc[n - 1][0].x, pc[n - 1][0].y, p[n].x, p[n].y);
+      }
+      //ctx.lineTo(p[p.length-1].x, B.y- 25);
+      ctx.stroke();
+      ctx.save();
+      ctx.fillStyle = grd;
+      ctx.fill();
+      ctx.restore();
+      }
+      function arrayMax(array) {
+      return Math.max.apply(Math, array);
+      };
+      function arrayMin(array) {
+      return Math.min.apply(Math, array);
+      };
+      function oMousePos(canvas, evt) {
+      var ClientRect = canvas.getBoundingClientRect();
+      return { //objeto
+      x: Math.round(evt.clientX - ClientRect.left),
+      y: Math.round(evt.clientY - ClientRect.top)
+      }
+      }
+    // //Chart-JavaScript
+    // service pie-charts
+    script(src='js/raphael-min.js')
+    script(src='js/morris.js')
+    script.
+      Morris.Donut({
+      element: 'graph4',
+      data: [
+      {value: 20, label: 'Team', formatted: 'at least 20%' },
+      {value: 50, label: 'Start Up', formatted: 'at least 50%' },
+      {value: 10, label: 'Business', formatted: 'approx. 10%' },
+      {value: 10, label: 'Plan', formatted: 'approx. 10%' },
+      {value: 10, label: 'A really really long label', formatted: 'Sucess 10%' }
+      ],
+      formatter: function (x, data) { return data.formatted; }
+      });
+    // //charts
+    // //pie-Chart-JavaScript
+    // start-smoth-scrolling
+    script(src='js/move-top.js')
+    script(src='js/easing.js')
+    script.
+      jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+      event.preventDefault();
+      $('html,body').animate({
+      scrollTop: $(this.hash).offset().top
+      }, 900);
+      });
+      });
+    // start-smoth-scrolling
+    // here stars scrolling icon
+    script.
+      $(document).ready(function () {
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      $().UItoTop({
+      easingType: 'easeOutQuart'
+      });
+      });
+    // //here ends scrolling icon
+    // bootstrap working
+    script(src='js/bootstrap.min.js')
+    // //bootstrap working
+    script(type='text/javascript').
+      $('.form-head').click(function(){
+      if($(this).closest('.grop-from').attr('id')=='signup'){
+      $('.grop-from').attr('id' , 'name');
+      $('.icon-action').addClass('back');
+      }
+      else if($(this).closest('.grop-from').attr('id')=='success'){
+      $('.grop-from').attr('id' , 'signup');
+      $('input').val('');
+      }
+      });
+      $('.form-action').click(function(){
+      var form_id = $('.grop-from').attr('id');
+      $('.icon-action').addClass('back');
+      if($('#control-' + form_id).val() != ''){
+      switch (form_id) {
+      case 'name':
+      form_id = "phone";
+      break;
+      case "phone":
+      form_id = "email";
+      break;
+      case "email":
+      form_id = "password";
+      break;
+      case "password":
+      form_id = "password-repeat";
+      break;
+      case "password-repeat":
+      form_id = "success";
+      break;
+      case "success":
+      form_id = "signup";
+      break;
+      }
+      $('.icon-action').addClass('back');
+      }
+      else{
+      switch (form_id) {
+      case 'name':
+      form_id = "signup";
+      $('.icon-action').removeClass('back');
+      break;
+      case "phone":
+      form_id = "name";
+      break;
+      case "email":
+      form_id = "phone";
+      break;
+      case "password":
+      form_id = "email";
+      break;
+      case "password-repeat":
+      form_id = "password";
+      break;
+      case "success":
+      form_id = "signup";
+      break;
+      }
+      $('.icon-action').removeClass('back');
+      }
+      $('.grop-from').attr('id' , form_id);
+      });
+      $('input').keyup(function(){
+      $('.grop-from').removeClass('error');
+      $('.error-text').fadeOut();
+      if($(this).val()!=''){
+      $('.icon-action').removeClass('back');
+      }
+      else{
+      $('.icon-action').addClass('back');
+      }
+      })

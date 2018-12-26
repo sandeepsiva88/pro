@@ -1,0 +1,336 @@
+doctype html
+html
+  head
+    title Book guide
+    // meta tags
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='keywords', content='Employ Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    // //meta tags ends here
+    // booststrap
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='css/location.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.js')
+    link(href='css/style.css', rel='stylesheet')
+    style.
+      @import "https://fonts.googleapis.com/css?family=Roboto";
+      body {
+      padding: 0;
+      margin: 0;
+      background-color: #f6f6f6;
+      font-family: 'Roboto', sans-serif;
+      }
+      .container {
+      background-color: #fff;
+      }
+      .step-wrapper {
+      padding: 20px 0;
+      display: none;
+      }
+      .step-wrapper.active {
+      display: block;
+      }
+      .step-indicator {
+      border-collapse: separate;
+      display: table;
+      margin-left: 0px;
+      position: relative;
+      table-layout: fixed;
+      text-align: center;
+      vertical-align: middle;
+      padding-left: 0;
+      padding-top: 20px;
+      }
+      .step-indicator li {
+      display: table-cell;
+      position: relative;
+      float: none;
+      padding: 0;
+      width: 1%;
+      }
+      .step-indicator li:after {
+      background-color: #ccc;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      width: 100%;
+      top: 32px;
+      }
+      .step-indicator li:after {
+      left: 50%;
+      }
+      .step-indicator li:last-child:after {
+      display: none;
+      }
+      .step-indicator li.active .step {
+      border-color: #4183D7;
+      color: #4183D7;
+      }
+      .step-indicator li.active .caption {
+      color: #4183D7;
+      }
+      .step-indicator li.complete:after {
+      background-color: #87D37C;
+      }
+      .step-indicator li.complete .step {
+      border-color: #87D37C;
+      color: #87D37C;
+      }
+      .step-indicator li.complete .caption {
+      color: #87D37C;
+      }
+      .step-indicator .step {
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      color: #ccc;
+      font-size: 24px;
+      height: 64px;
+      line-height: 64px;
+      margin: 0 auto;
+      position: relative;
+      width: 64px;
+      z-index: 1;
+      }
+      .step-indicator .step:hover {
+      cursor: pointer;
+      }
+      .step-indicator .caption {
+      color: #ccc;
+      padding: 11px 16px;
+      }
+  body
+    #home.header-outs
+      .header-w3layouts
+        // //navigation section
+        .headr-title.text-center
+          h1
+            a.navbar-brand(href='index2')
+              span.fab.fa-servicestack
+              | GET GUIDE
+          .clearfix
+        nav.navbar.navbar-expand-lg.navbar-light
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse.nav-fill
+            ul.navbar-nav.nav-pills.nav-fill
+              li.nav-item
+                a.nav-link(href='index2')
+                  | Home 
+                  span.sr-only (current)
+              li.nav-item.active
+                a.nav-link(href='about') About
+              li.nav-item
+                a.nav-link(href='service') Service
+              li.nav-item
+                a.nav-link(href='gallery') Gallery
+              li.nav-item
+                a.nav-link(href='guide') Guide Login
+              li.nav-item
+                a.nav-link(href='contact') Contact
+              li.nav-item
+                a.nav-link(href='help') Help
+    // //Navigation
+    // banner
+    .inner_page-banner
+    // //banner
+    // short
+    .using-border.py-3
+      .inner_breadcrumb.ml-4
+        ul.short_ls
+          li
+            a(href='index2') Home
+            span / /
+          li About
+      .container
+          #app
+            step-navigation(:steps='steps', :currentstep='currentstep')
+            div(v-show='currentstep == 1')
+              .container
+                h4 Address
+                p
+                  | You can click the button below to use your current location as your address
+                #map
+                p#current_position
+                button#sid.btn.center-align
+                  i.material-icons
+                    | my_location
+                  |     Use My Location
+                form#billingAddress
+                  #locationList
+                  br
+                  .input-field
+                    textarea#address.materialize-textarea
+                    label.active(for='address') Address (Area and Street)
+                  .input-field
+                    input#locality(type='text')
+                    label.active Locality
+                  .input-field
+                    input#city(type='text')
+                    label.active City/District/Town
+                  .input-field
+                    input#postal_code(type='text')
+                    label.active Pin Code
+                  .input-field
+                    input#landmark(type='text')
+                    label.active Landmark
+                  .input-field
+                    input#state(type='text')
+                    label.active State
+              br
+              br 
+              br
+              br
+            div(v-show='currentstep == 2')
+              h1 Step 2
+                br
+                br
+                br
+                br
+            div(v-show='currentstep == 3')
+              h1 Step 3
+              br
+              br
+              br
+            step(v-for='step in steps', :currentstep='currentstep', :key='step.id', :step='step', :stepcount='steps.length', @step-change='stepChanged')
+            script#step-navigation-template(type='x-template').
+              <ol class="step-indicator">
+              <li v-for="step in steps" is="step-navigation-step" :key="step.id" :step="step" :currentstep="currentstep">
+              </li>
+              </ol>
+            script#step-navigation-step-template(type='x-template').
+              <li :class="indicatorclass">
+              <div class="step"><i :class="step.icon_class"></i></div>
+              <div class="caption hidden-xs hidden-sm">Step <span v-text="step.id"></span>: <span v-text="step.title"></span></div>
+              </li>
+            script#step-template(type='x-template').
+              <div class="step-wrapper" :class="stepWrapperClass">
+              <button type="button" class="btn btn-primary" @click="lastStep" :disabled="firststep">
+              Back
+              </button>
+              <button type="button" class="btn btn-primary" @click="nextStep" :disabled="laststep">
+              Next
+              </button>
+              <button type="submit" class="btn btn-primary" v-if="laststep">
+              Submit
+              </button>
+            </div>
+    // start-smoth-scrolling
+    script(src='js/move-top.js')
+    script(src='js/easing.js')
+    script.
+      $(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({
+        scrollTop: $(this.hash).offset().top
+        }, 900);
+        });
+      });
+    // start-smoth-scrolling
+    // here stars scrolling icon
+    script.
+      $(document).ready(function () {
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear'
+        };
+        $().UItoTop({
+        easingType: 'easeOutQuart'
+        });
+      });
+      // //here ends scrolling icon
+      // bootstrap working
+      // //bootstrap working
+    script.
+      addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+      }, false);
+      function hideURLbar() {
+      window.scrollTo(0, 1);
+      }
+    script.
+      Vue.component("step-navigation-step", {
+      template: "#step-navigation-step-template",
+      props: ["step", "currentstep"],
+      computed: {
+      indicatorclass() {
+      return {
+      active: this.step.id == this.currentstep,
+      complete: this.currentstep > this.step.id
+      };
+      }
+      }
+      });
+      Vue.component("step-navigation", {
+      template: "#step-navigation-template",
+      props: ["steps", "currentstep"]
+      });
+      Vue.component("step", {
+      template: "#step-template",
+      props: ["step", "stepcount", "currentstep"],
+      computed: {
+      active() {
+      return this.step.id == this.currentstep;
+      },
+      firststep() {
+      return this.currentstep == 1;
+      },
+      laststep() {
+      return this.currentstep == this.stepcount;
+      },
+      stepWrapperClass() {
+      return {
+      active: this.active
+      };
+      }
+      },
+      methods: {
+      nextStep() {
+      this.$emit("step-change", this.currentstep + 1);
+      },
+      lastStep() {
+      this.$emit("step-change", this.currentstep - 1);
+      }
+      }
+      });
+      new Vue({
+      el: "#app",
+      data: {
+      currentstep: 1,
+      steps: [
+      {
+      id: 1,
+      title: "Position",
+      icon_class: "fa fa-map-marker"
+      },
+      {
+      id: 2,
+      title: "Category",
+      icon_class: "fa fa-folder-open"
+      },
+      {
+      id: 3,
+      title: "Send",
+      icon_class: "fa fa-paper-plane"
+      }
+      ]
+      },
+      methods: {
+      stepChanged(step) {
+      this.currentstep = step;
+      }
+      }
+      });
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js')
+    script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC4rJ-rYxW2QolR5mm4achyMsURuBWrgJs')
+    script(type='text/javascript', src='js/location.js')

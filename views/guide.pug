@@ -1,0 +1,413 @@
+doctype html
+html(lang='zxx')
+  head
+    link(rel='icon', href='images/download.png')
+    title Book guide
+    // meta tags
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='keywords', content='Employ Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,     Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script.
+      addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+      }, false);
+      function hideURLbar() {
+      window.scrollTo(0, 1);
+      }
+    // //meta tags ends here
+    // booststrap
+    link(href='css/bootstrap.min.css', rel='stylesheet', type='text/css', media='all')
+    // //booststrap end
+    // font-awesome icons
+    link(href='css/fontawesome-all.min.css', rel='stylesheet', type='text/css', media='all')
+    // //font-awesome icons
+    // stylesheets
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // //stylesheets
+    // guide login
+    link(href='css/guidelogin.css', rel='stylesheet', type='text/css', media='all')
+    // //guidelogin
+    link(href='//fonts.googleapis.com/css?family=Montserrat:300,400,500', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    link(rel='stylesheet', type='', href='BOOTSTRAP The Service Club Signup.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='alert/dist/sweetalert.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+    style(type='text/css').
+      body {
+      font-family: Arial, Helvetica, sans-serif;
+      }
+      /* The Modal (background) */
+      .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 7;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      }
+      /* Modal Content */
+      .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 60%;
+      }
+      /* The Close Button */
+      .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      }
+      .close:hover,
+      .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="number"] {
+      width: 70%;
+      }
+  body
+    #myModal.modal
+      .modal-content
+        span.close ×
+        // Nav Bar
+        // Registration Form
+        .container
+          h2(style='margin-left:33%;') Sign Up
+          form.form-horizontal(action='/gsign', method='POST')
+            .form-group
+              label.col-sm-2.control-label(for='fullname') Full Name
+              .col-sm-10
+                input#fullname.form-control(type='text', placeholder='Full Name', name='fullname')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Qualification
+              .col-sm-10
+                input#qualify.form-control(type='email', placeholder='Qualification', name='qualification')
+            .form-group
+              label.col-sm-2.control-label(for='inputPassword3') Address Line1:
+              .col-sm-10
+                input#ads1.form-control(type='text', placeholder='Permanent Address', name='permanent Address')
+            .form-group
+              label.col-sm-2.control-label(for='inputPassword3') Address Line2:
+              .col-sm-10
+                input#ads2.form-control(type='text', placeholder='Current Address', name='current Address')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') State
+              .col-sm-10
+                input#st.form-control(type='text', placeholder='State', name='state')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') City
+              .col-sm-10
+                input#ct.form-control(type='text', placeholder='City', name='city')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Pincode
+              .col-sm-10
+                input#pn.form-control(type='number', placeholder='Pincode', name='pincode')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Mobileno
+              .col-sm-10
+                input#ph1.form-control(type='number', placeholder='Mobileno', name='mobileno')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Phone
+              .col-sm-10
+                input#ph2.form-control(type='number', placeholder='Phone', name='phone')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Language Known
+              .col-sm-10
+                input#lk(type='checkbox')
+                label English
+                input#lk(type='checkbox')
+                label Hindi
+                input#lk(type='checkbox')
+                label Telgu
+                input#lk(type='checkbox')
+                label Bengali
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Gender
+              .col-sm-10
+                input#g(type='radio')
+                label Male
+                input#g(type='radio')
+                label Female
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') License Id
+              .col-sm-10
+                input#li.form-control(type='text', placeholder='enter your licence number')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Email
+              .col-sm-10
+                input#e.form-control(type='email', placeholder='Email')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Password
+              .col-sm-10
+                input#pd.form-control(type='password', placeholder='Password')
+            .form-group
+              label.col-sm-2.control-label(for='inputEmail3') Confirm Password
+              .col-sm-10
+                input#cd.form-control(type='password', placeholder='Confirm Password')
+            .form-group
+              .col-sm-offset-2.col-sm-10
+                button.btn.btn-success(type='submit') Register
+    #home.header-outs
+      .header-w3layouts
+        // //navigation section
+        .headr-title.text-center
+          h1
+            a.navbar-brand(href='index2')
+              span.fab.fa-servicestack
+              | GET GUIDE
+          .clearfix
+        nav.navbar.navbar-expand-lg.navbar-light
+          button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          #navbarSupportedContent.collapse.navbar-collapse.nav-fill
+            ul.navbar-nav.nav-pills.nav-fill
+              li.nav-item
+                a.nav-link(href='index2')
+                  | Home 
+                  span.sr-only (current)
+              li.nav-item
+                a.nav-link(href='about') About
+              li.nav-item
+                a.nav-link(href='service') Service
+              li.nav-item
+                a.nav-link(href='gallery') Gallery
+              li.nav-item.active
+                a.nav-link(href='guide') Guide Login
+              li.nav-item
+                a.nav-link(href='contact') User LOgin
+              li.nav-item
+                a.nav-link(href='help') Help
+    // //Navigation
+    // banner
+    .inner_page-banner
+    // //banner
+    // short
+    .using-border.py-3
+      .inner_breadcrumb.ml-4
+        ul.short_ls
+          li
+            a(href='index2') Home
+            span / /
+          li guidelogin
+    // //short
+    // about
+    // about-one
+    section.about-inner.py-lg-4.py-md-3.py-sm-3.py-3
+      .container.py-lg-1.py-md-1.py-sm-1.py-1
+        h3.title.text-center.mb-lg-5.mb-md-4.mb-sm-4.mb-3 Guide Login
+        br
+        br
+        br
+        section.user
+          .user_options-container
+            .user_options-text
+              .user_options-unregistered
+                h2.user_unregistered-title Don't have an account?
+                p.user_unregistered-text come join our community.
+                button#myBtn.user_unregistered-signup Sign up
+              .user_options-registered
+                h2.user_registered-title Have an account?
+                p.user_registered-text welcome to our community.
+                button#login-button.user_registered-login Login
+            #user_options-forms.user_options-forms
+              .user_forms-login
+                h2.forms_title Login
+                form.forms_form
+                  fieldset.forms_fieldset
+                    .forms_field
+                      input.forms_field-input(type='email', placeholder='Email', required='', autofocus='')
+                    .forms_field
+                      input.forms_field-input(type='password', placeholder='Password', required='')
+                  .forms_buttons
+                    button#forgot_pass.forms_buttons-forgot(type='button', onclick='JSalert()') Forgot password?
+                    input.forms_buttons-action(type='submit', value='Log In')
+      // //about-two
+    // Footer
+    section.buttom-footer.py-lg-4.py-md-3.py-sm-3.py-3
+      .container.py-lg-5.py-md-5.py-sm-4.py-4
+        .row.subscribe-form
+          .col-lg-6.email-sub-agile
+            form(action='/mails', method='POST')
+              .form-group
+                input.form-control.email-sub-agile(type='email', placeholder='Email', name='email')
+              .text-center
+                button.btn.subscrib-btnn(type='submit', name='submit') Subscribe
+          .col-lg-6.email-info
+            .wthree-form-list.clr-black
+              h4 For more updates get subscribed.
+        .pt-lg-5.pt-md-5.pt-sm-4.pt-3
+          .row.footer-agile-grids
+            .col-lg-4.col-md-4.col-sm-12.wthree-left-right
+              h4 Nav Links
+              nav.border-line
+                ul.nav.flex-column
+                  li.nav-item.active
+                    a.nav-link(href='index2')
+                      span.sr-only (current)
+                  li.nav-item
+                    a.nav-link(href='about') About
+                  li.nav-item
+                    a.nav-link(href='service') Services
+                  li.nav-item
+                    a.nav-link(href='gallery') Gallery
+                  li.nav-item
+                    a.nav-link(href='guide') Guide Login
+                  li.nav-item
+                    a.nav-link(href='contact') User Login
+                  li.nav-item
+                    a.nav-link(href='help') Help
+            .col-lg-4.col-md-4.col-sm-12.wthree-left-right
+              h4 Our Address
+              .addres-up
+                ul
+                  li.d-flex.pb-md-3.pb-3
+                    span.fas.fa-map-marker-alt.d-flex
+                    p.d-flex Aditya Engineering college
+                  li.d-flex.pb-md-3.pb-3
+                    span.fas.fa-phone-volume.d-flex(aria-hidden='true')
+                    p.d-flex 8465803247
+                  li.d-flex.pb-md-3.pb-3
+                    span.far.fa-envelope.d-flex
+                    p.d-flex
+                      a(href='mailto:info@example.com') raj.prafullaraj@gmail.com
+                  li.d-flex.pb-md-3.pb-3
+                    span.fas.fa-fax.d-flex
+                    p.d-flex 9703004251
+                  li.d-flex
+                    span.fab.fa-windows.d-flex(aria-hidden='true')
+                    p.d-flex www.getguide.com
+              .icons.mt-4
+                ul
+                  li
+                    a(href='#')
+                      span.fab.fa-facebook-f
+                  li
+                    a(href='#')
+                      span.fas.fa-envelope
+                  li
+                    a(href='#')
+                      span.fas.fa-rss
+                  li
+                    a(href='#')
+                      span.fab.fa-vk
+            .wthree-left-right.col-lg-4.col-md-4.col-sm-12
+              h4.pb-lg-3.pb-3 Our Posts
+              .footer-post.d-flex.mb-2
+                .agileinfo_footer_grid1.mr-2
+                  a(href='gallery')
+                    img.img-fluid(src='images/f1.jpg', alt=' ')
+                .agileinfo_footer_grid1.mr-2
+                  a(href='gallery')
+                    img.img-fluid(src='images/f2.jpg', alt=' ')
+                .agileinfo_footer_grid1
+                  a(href='gallery')
+                    img.img-fluid(src='images/f3.jpg', alt=' ')
+              .footer-post.d-flex
+                .agileinfo_footer_grid1.mr-2
+                  a(href='gallery')
+                    img.img-fluid(src='images/f4.jpg', alt=' ')
+                .agileinfo_footer_grid1.mr-2
+                  a(href='gallery')
+                    img.img-fluid(src='images/f5.jpg', alt=' ')
+                .agileinfo_footer_grid1
+                  a(href='gallery')
+                    img.img-fluid(src='images/f6.jpg', alt=' ')
+    // //Footer
+    // js working
+    script(src='js/jquery-2.2.3.min.js')
+    // //js working
+    // start-smoth-scrolling
+    script(src='js/move-top.js')
+    script(src='js/easing.js')
+    script.
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event) {
+      event.preventDefault();
+      $('html,body').animate({
+      scrollTop: $(this.hash).offset().top
+      }, 900);
+      });
+      });
+    // start-smoth-scrolling
+    // here stars scrolling icon
+    script.
+      $(document).ready(function() {
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      $().UItoTop({
+      easingType: 'easeOutQuart'
+      });
+      });
+    // //here ends scrolling icon
+    // bootstrap working
+    script(src='js/bootstrap.min.js')
+    // //bootstrap working
+    script.
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+      modal.style.display = "block";
+      }
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+      modal.style.display = "none";
+      }
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+      if (event.target == modal) {
+      modal.style.display = "none";
+      }
+      }
+      loginButton = document.getElementById('login-button'),
+      userForms = document.getElementById('user_options-forms')
+      loginButton.addEventListener('click', () => {
+      userForms.classList.remove('bounceLeft')
+      userForms.classList.add('bounceRight')
+      }, false)
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js')
+    script.
+      function JSalert(){  
+         swal({   title: "Require Email!",
+         type: "input",   
+         showCancelButton: true, 
+         closeOnConfirm: false,   
+         animation: "slide-from-top",  
+         inputPlaceholder: "Your Email address" });
+
+
+      }
+
+
